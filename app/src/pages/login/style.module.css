@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Nunito", sans-serif;
+    background-color: #031314;
+    min-height: 100vh;
+
+    h1 {
+    color: #DFF7E2;
+    padding: 40px;
+    text-align: center;
+}
+
+    h2 {
+        color: #DFF7E2;
+        padding: 0 20px;
+        font-size: 1rem;
+    }
+}
+
+#informations {
+    background-color: #093030;
+    flex: 1;
+    min-width: 100%;
+    border-radius: 40px 40px 0 0;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    padding-bottom: 20px;
+    color: #DFF7E2;
+
+    p {
+        padding: 0 20px;
+        font-size: 0.8rem;
+    }
+}
+
+#informationsInputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.divInput {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+}
+
+.labelInput {
+    color: #DFF7E2;
+    margin-left: 18px;
+    margin-bottom: 5px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.input {
+    min-width: calc(100px + 20vw);
+    background-color: #DFF7E2;
+    border-radius: 18px;
+    padding: 10px 20px;
+}
+
+#passwordInput {
+    position: relative;
+    width: fit-content;
+    img {
+        position: absolute;
+        right: 5%;
+        top: 40%;
+        cursor: pointer;
+        width: 20px;
+        height: 10px;
+    }
+}
+
+#inputsToContinue {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+
+    input {
+        font-size: 1.3rem;
+        font-weight: 600;
+        border: none;
+        outline: none;
+        border-radius: 20px;
+        background-color: #00D09E;
+        color: #093030;
+    }
+
+    input.loginRegistrationButton {
+        padding: 10px 60px;
+    }
+
+    #forgotPass, #terms {
+        font-size: 0.8rem;
+        font-weight: 600;
+        text-decoration: none;
+        color: #DFF7E2;
+    }
+
+    p {
+        font-size: 0.9rem;
+        font-weight: 200;
+        color: #DFF7E2;
+
+        #loginRegistration {
+            text-decoration: none;
+            color: #00D09E;
+        }
+    }
+}
+
+#next, #before, #sendAgain {
+    text-decoration: none;
+    padding: 10px;
+    font-size: 1.2rem;
+    color: #093030;
+    border-radius: 40px;
+    font-weight: 700;
+    min-width: calc(100px + 10vw);
+}
+
+#next {
+    background-color: #00D09E;
+    margin-bottom: 100px;
+
+}
+
+#before, #sendAgain {
+    background-color: #DFF7E2;
+}
+
+input[type="button"] {
+    cursor: pointer;
+}
+
+.pinInputs {
+    display: flex;
+    gap: 5px;
+}
+
+.pinDigit {
+    outline: none;
+    border-radius: 100%;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    border: 3px #00D09E solid;
+    background-color: #093030;
+    color: #DFF7E2;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.pinDigit:focus {
+    border: #007459 solid 3px;
+}
