@@ -5,19 +5,18 @@ import { useNavigate } from "react-router-dom";
 
 function SuccessOperation ({message, route}:{message: string, route: string}) {
     const navigate = useNavigate();
-     console.log("Renderizou SuccessOperation")
     useEffect(() => {
         const timer = setTimeout(() => {
             navigate(route);
-        }, 2000); // 2 segundos
+        }, 2000);
 
         return () => clearTimeout(timer);
     }, [navigate, route]);
 
     return (
         <div id={css.main}>
-            <img src={successIcon} alt="Operação concluída"/>
-            <p>{message}</p>
+            <img src={successIcon} alt="Operação concluída" className={css.sucess}/>
+            <p className={css.pMessage}>{message}</p>
         </div>
     )
 }

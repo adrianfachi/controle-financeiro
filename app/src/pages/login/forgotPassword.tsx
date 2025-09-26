@@ -35,10 +35,10 @@ function ForgotPassoword () {
         <div id={css.main}>
             {next ? (
                 <>
-                <h1>Pin de segurança</h1>
+                <h1 className={css.titleMainLogin}>Pin de segurança</h1>
                 <section id={css.informations}>
                     <div id={css.informationsInputs}>
-                        <h2>Digite seu pin de segurança</h2>
+                        <h2 className={css.titleInformationLogin}>Digite seu pin de segurança</h2>
                         <InputPin/>
                     </div>
                     <div id={css.inputsToContinue}>
@@ -49,11 +49,11 @@ function ForgotPassoword () {
                 </>
             ): accept ? (
                 <>
-                <h1>Nova senha</h1>
+                <h1 className={css.titleMainLogin}>Nova senha</h1>
                 <section id={css.informations}>
                     <div id={css.informationsInputs}>
-                        <h2>Redefinir senha?</h2>
-                        <p>Digite seu e-mail para receber o pin para redefinição de senha</p>
+                        <h2 className={css.titleInformationLogin}>Redefinir senha?</h2>
+                        <p className={css.pLogin}>Digite seu e-mail para receber o pin para redefinição de senha</p>
                         <InputPassword ref={inputPassword} labelValue="Nova senha" id="passChange"/>
                         <InputPassword ref={inputConfirmPassword} labelValue="Confirme a nova senha" id="passChangeConfirm"/>
                     </div>
@@ -68,11 +68,11 @@ function ForgotPassoword () {
                 </>
             ) : (
                 <>
-                <h1>Esqueci minha senha</h1>
+                <h1 className={css.titleMainLogin}>Esqueci minha senha</h1>
                 <section id={css.informations}>
                     <div id={css.informationsInputs}>
-                        <h2>Redefinir senha?</h2>
-                        <p>Digite seu e-mail para receber o pin para redefinição de senha</p>
+                        <h2 className={css.titleInformationLogin}>Redefinir senha?</h2>
+                        <p className={css.pLogin}>Digite seu e-mail para receber o pin para redefinição de senha</p>
                         <InputUser ref={inputUser} labelValue="Digite seu email" placeholderValue="exemplo@exemplo.com" type={"text"} id="emailToChange"/>
                     </div>
                     <div id={css.inputsToContinue}>

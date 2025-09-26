@@ -10,7 +10,7 @@ function login() {
 
     return (
         <div id={css.main}>
-            <h1>Bem-vindo</h1>
+            <h1 className={css.titleMainLogin}>Bem-vindo</h1>
             <section id={css.informations}>
                 <div id={css.informationsInputs}>
                     <InputText ref={inputUser} labelValue="Username ou email" placeholderValue="exemplo@exemplo.com" type={"text"} id="userNameLogin"/>
@@ -19,7 +19,7 @@ function login() {
                 <div id={css.inputsToContinue}>
                     <input type="button" value="Entrar" className={css.loginRegistrationButton}/>
                     <Link to={"/esqueciMinhaSenha"} id={css.forgotPass}>Esqueceu a senha?</Link>
-                    <p>Não tem uma conta? <Link to={"/cadastro"} id={css.loginRegistration}>Cadastre-se</Link></p>
+                    <p className={css.pLogin}>Não tem uma conta? <Link to={"/cadastro"} id={css.loginRegistration}>Cadastre-se</Link></p>
                 </div>
             </section>
         </div>

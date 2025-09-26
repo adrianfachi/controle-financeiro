@@ -15,7 +15,7 @@ function cadastro() {
 
     return (
         <div id={css.main}>
-            <h1>Crie uma conta</h1>
+            <h1 className={css.titleMainLogin}>Crie uma conta</h1>
             <section id={css.informations}>
                 <div id={css.informationsInputs}>
                     <InputText ref={inputName} labelValue="Nome Completo" placeholderValue="Nome Completo" type="text" id="userNameRegister"/>
@@ -28,10 +28,10 @@ function cadastro() {
                 <div id={css.inputsToContinue}>
                     <input type="button" value="Cadastre-se" className={css.loginRegistrationButton}/>
                     <div>
-                        <p>Ao continuar, você concordo em</p>
-                        <Link to={"/"} id={css.terms}>Termos de Uso e Política de Privacidade.</Link>
+                        <p className={css.pLogin}>Ao continuar, você concordo em</p>
+                        <Link to={"/termos"} id={css.terms}>Termos de Uso e Política de Privacidade.</Link>
                     </div>
-                    <p>Já tem uma conta? <Link to={"/login"} id={css.loginRegistration}>Faça login</Link></p>
+                    <p className={css.pLogin}>Já tem uma conta? <Link to={"/login"} id={css.loginRegistration}>Faça login</Link></p>
                 </div>
             </section>
         </div>
